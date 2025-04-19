@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,27 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Custom colors for Indian cuisine theme
+				saffron: {
+					DEFAULT: '#F59E0B',
+					light: '#FCD34D',
+					dark: '#D97706',
+				},
+				cardamom: {
+					DEFAULT: '#166534',
+					light: '#22C55E',
+					dark: '#14532D',
+				},
+				sandalwood: {
+					DEFAULT: '#78350F',
+					light: '#92400E',
+					dark: '#451A03',
+				},
+				rosewater: {
+					DEFAULT: '#FECDD3',
+					light: '#FEE2E2',
+					dark: '#FDA4AF',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +84,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'poppins': ['Poppins', 'sans-serif'],
+				'lora': ['Lora', 'serif'],
+				'noto-devanagari': ['Noto Serif Devanagari', 'serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +112,56 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'steam-float': {
+					'0%': { 
+						transform: 'translateY(0) translateX(0)',
+						opacity: '0'
+					},
+					'50%': { 
+						opacity: '0.6'
+					},
+					'100%': { 
+						transform: 'translateY(-30px) translateX(10px)',
+						opacity: '0'
+					}
+				},
+				'pulse-soft': {
+					'0%, 100%': { 
+						transform: 'scale(1)',
+						opacity: '1'
+					},
+					'50%': { 
+						transform: 'scale(1.05)',
+						opacity: '0.9'
+					}
+				},
+				'card-flip': {
+					'0%': { 
+						transform: 'rotateY(0deg)'
+					},
+					'100%': { 
+						transform: 'rotateY(180deg)'
+					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'steam-float': 'steam-float 3s ease-in-out infinite',
+				'pulse-soft': 'pulse-soft 2s ease-in-out infinite',
+				'card-flip': 'card-flip 0.6s ease-out forwards',
+				'fade-in': 'fade-in 0.5s ease-out forwards'
 			}
 		}
 	},
