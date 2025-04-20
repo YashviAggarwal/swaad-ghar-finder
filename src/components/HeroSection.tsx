@@ -64,13 +64,13 @@ const HeroSection = () => {
             className={`text-4xl md:text-6xl font-playfair font-bold text-white mb-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
             style={{ transitionDelay: '300ms' }}
           >
-            <span className="text-saffron">Bharat ka Swaad,</span> Ek Jagah
+            <span className="text-saffron">Culinary Hunters:</span> Unearthing the Flavors of India
           </h2>
           <h3 
             className={`text-xl md:text-2xl font-poppins text-white/90 mb-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
             style={{ transitionDelay: '600ms' }}
           >
-            Find the Taste of Every Indian Home
+            Discover authentic recipes from every corner of India
           </h3>
           <div 
             className={`flex flex-wrap gap-4 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}

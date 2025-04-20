@@ -17,10 +17,10 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2">
             <div className="w-10 h-10 bg-saffron rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">SG</span>
+              <span className="text-white font-bold text-lg">CH</span>
             </div>
             <h1 className="text-2xl font-playfair font-bold text-sandalwood">
-              <span className="text-saffron">Swaad</span> Ghar
+              <span className="text-saffron">Culinary</span> Hunters
             </h1>
           </Link>
 
@@ -112,9 +112,9 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-playfair font-bold mb-4">Swaad Ghar</h3>
+              <h3 className="text-xl font-playfair font-bold mb-4">Culinary Hunters</h3>
               <p className="text-sm">
-                Explore the rich culinary heritage of India with our collection of authentic recipes from every Indian home.
+                Unearthing the Flavors of India - explore the rich culinary heritage with our collection of authentic recipes from every Indian home.
               </p>
             </div>
             <div>
@@ -162,7 +162,7 @@ const Layout = ({ children }: LayoutProps) => {
             </div>
           </div>
           <div className="border-t border-saffron-dark mt-8 pt-6 text-center">
-            <p className="text-sm">&copy; {new Date().getFullYear()} Swaad Ghar. All rights reserved.</p>
+            <p className="text-sm">&copy; {new Date().getFullYear()} Culinary Hunters. All rights reserved.</p>
           </div>
         </div>
       </footer>
